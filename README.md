@@ -6,17 +6,16 @@ This repository contains Python programs demonstrating **List, Dictionary, Set, 
 
 ## Overview
 
-This assignment covers essential Python concepts:
+This assignment covers essential operations in Python data structures:
 
 • Creating and modifying lists  
-• List indexing and slicing  
-• List methods and built-in functions  
+• Accessing list elements using indexing and slicing  
+• Applying common list methods  
 • Creating and modifying dictionaries  
-• Dictionary methods such as `keys()`, `values()`, and `items()`  
+• Using dictionary methods  
 • Creating sets and removing duplicate values  
-• Set union and intersection  
-• Conditional statements using `if`, `elif`, and `else`  
-• Taking user input and performing decision-making  
+• Performing set union and intersection  
+• Applying conditional statements using `if`, `elif`, and `else`
 
 ---
 
@@ -29,8 +28,10 @@ This assignment covers essential Python concepts:
 • `pop()`  
 • `extend()`  
 • Sorting in descending order  
-• `max()`, `min()`, and `sum()`  
-• Indexing  
+• `max()`  
+• `min()`  
+• `sum()`  
+• Positive & Negative Indexing  
 • Slicing  
 • Reversing a list  
 
@@ -43,24 +44,30 @@ name_list = ["Rakshan", "Raghav", "Pranish", "Nikhilan", "Vihaan"]
 
 name_list.append("Yazhini")
 age_list.insert(2, 26)
+
 name_list.remove("Yazhini")
 age_list.pop()
-age_list.extend([31, 30, 32])
 
+age_list.extend([31, 30, 32])
 age_list.sort(reverse=True)
 
 print("Maximum:", max(age_list))
 print("Minimum:", min(age_list))
 print("Sum:", sum(age_list))
+Output
+Maximum: 32
+Minimum: 24
+Sum: 213
+List Accessing
 
+Lists can be accessed using indexing and slicing.
+
+Example
 print(name_list[0])
 print(name_list[-1])
 print(name_list[2:5])
 print(name_list[::-1])
-Maximum: 32
-Minimum: 24
-Sum: 213
-
+Output
 Rakshan
 Vihaan
 ['Pranish', 'Nikhilan', 'Vihaan']
@@ -68,9 +75,9 @@ Vihaan
 Dictionary Concepts Covered
 
 • Dictionary Creation
-• Accessing dictionary values
+• Accessing values
 • Adding new key-value pairs
-• Updating existing values
+• Updating values
 • keys()
 • values()
 • items()
@@ -103,9 +110,9 @@ dict_values([85, 90, 82, 88, 92, 80])
 • Set Creation
 • Removing duplicate values
 • Understanding unordered collections
-• Set Union
-• Set Intersection
-• Understanding set indexing
+• Union
+• Intersection
+• Set indexing
 
 Example
 my_set = {'a', 'e', 'i', 'o', 'u', 'a', 'a', 'i'}
@@ -113,10 +120,10 @@ my_set = {'a', 'e', 'i', 'o', 'u', 'a', 'a', 'i'}
 print(my_set)
 Output
 {'a', 'e', 'i', 'o', 'u'}
-Explanation
 
-Sets automatically remove duplicate values.
+Duplicate values are automatically removed from a set.
 
+Union and Intersection
 set1 = {1, 3, 5, 7, 9}
 set2 = {2, 3, 5, 8, 10}
 
@@ -124,14 +131,13 @@ print("Union:", set1.union(set2))
 print("Intersection:", set1.intersection(set2))
 Output
 Union: {1, 2, 3, 5, 7, 8, 9, 10}
-
 Intersection: {3, 5}
 
-Sets do not support indexing because they are unordered collections.
+Sets do not support indexing because they are unordered.
 
 🔀 Conditional Statements
 
-Conditional statements are used to make decisions based on a given condition.
+Conditional statements are used to make decisions based on conditions.
 
 Performance Category Program
 score = int(input("Enter your score (0 to 10): "))
@@ -147,16 +153,16 @@ else:
 Sample Output
 Enter your score (0 to 10): 7
 Average: Good effort! Keep practicing.
-## 🔑 Key Insights
+🎯 Key Insights
 
-• Lists are **ordered and mutable**, allowing elements to be added, removed, and modified.  
-• Dictionary data is stored as **key-value pairs** for easy access and updates.  
-• Sets store **unique values** and automatically remove duplicates.  
-• List slicing helps access a specific range of elements.  
-• `append()` adds one element, while `extend()` adds multiple elements.  
-• `union()` combines unique elements from two sets, while `intersection()` finds common elements.  
-• Conditional statements (`if`, `elif`, `else`) help make decisions based on conditions.  
-• User input can be combined with conditional statements to create interactive programs.
+• Lists are ordered and mutable.
+• Dictionaries store data as key-value pairs.
+• Sets automatically remove duplicate values.
+• append() adds one element, while extend() adds multiple elements.
+• Indexing and slicing are used to access list elements.
+• union() combines sets and intersection() finds common elements.
+• if, elif, and else are used for decision-making.
+
 📂 Project File
 
 Python Data Structures - Lists, Dictionaries, Sets & Conditional Statements.ipynb
@@ -168,5 +174,3 @@ D. Suganya
 Module 4 – Python Basics
 
 Data Structures: Lists, Dictionaries, Sets & Conditional Statements
-
-
