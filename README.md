@@ -1,62 +1,27 @@
-# Project Title
+# 🐍 Python Data Structures and Conditional Statements
 
-retail data analysis.
+## 📌 Overview
 
-## Description
+This project covers basic Python concepts including **Lists, Dictionaries, Sets, and Conditional Statements**.
 
-An in-depth paragraph about your project and overview of use.
+## 📋 List
 
-## Getting Started
+```python
+age_list = [24, 25, 27, 28, 29]
+name_list = ["Suganya", "Divya", "Ramya", "Geetha", "Shruthi"]
 
-### Dependencies
+name_list.append("Yazhini")
+age_list.insert(2, 26)
+name_list.remove("Yazhini")
+age_list.pop()
+age_list.extend([31, 30, 32])
+age_list.sort(reverse=True)
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+print("Maximum:", max(age_list))
+print("Minimum:", min(age_list))
+print("Sum:", sum(age_list))
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+print(name_list[0])
+print(name_list[-1])
+print(name_list[2:5])
+print(name_list[::-1])
